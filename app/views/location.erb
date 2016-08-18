@@ -25,10 +25,10 @@ html, body, iframe { height: 100%; margin: 0; padding: 0;}
     </style>
   </head>
   <body>
-    <div class='wrapper'><div>Danielle is probably in: <span class='location'><%= model.pretty_name %></span>,<br /> and their current UTC Offset is: <span class='tz'><%= model.time_zone_offset / 60.0 %></span></div></div>
+    <div class='wrapper'><div>Torres is probably in: <span class='location'><%= model.pretty_name %></span>,<br /> and his current UTC Offset is: <span class='tz'><%= model.time_zone_offset / 60.0 %></span></div></div>
     <iframe
       frameborder="0" style="border:0;width:100%;height:100%"
-                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnSnRQ7JCzuX7ZtK-3Qe3w9peBv6MuN-I
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBIaHxPUkm3JKR4sq0YspcSr45af1gZdgA
                       &q=<%= model.pretty_name.gsub(' ','+') %>"
                       allowfullscreen>
     </iframe>
